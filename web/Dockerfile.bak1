@@ -1,0 +1,25 @@
+# pull official base image
+FROM node
+
+# set working directory
+WORKDIR /app
+
+ARG div_bk_color=green
+ENV REACT_APP_DIV_BK_COLOR=$div_bk_color
+
+# add `/app/node_modules/.bin` to $PATH
+ENV PATH /app/node_modules/.bin:$PATH
+
+# install app dependencies
+COPY package.json ./
+COPY package-lock.json ./
+
+EXPOSE 300
+
+RUN npm install
+
+# add app
+COPY . ./
+
+# start app
+CMD ["yarn", "start"]
