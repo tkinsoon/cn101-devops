@@ -1,4 +1,4 @@
-package com.vmware.cn101.module3.app.model;
+package com.vmware.cn101.devops.app.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

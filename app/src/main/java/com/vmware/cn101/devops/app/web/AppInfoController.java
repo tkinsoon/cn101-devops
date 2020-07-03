@@ -1,7 +1,7 @@
-package com.vmware.cn101.module3.app.web;
+package com.vmware.cn101.devops.app.web;
 
-import com.vmware.cn101.module3.app.model.AppInfo;
-import com.vmware.cn101.module3.app.service.AppInfoService;
+import com.vmware.cn101.devops.app.model.AppInfo;
+import com.vmware.cn101.devops.app.service.AppInfoService;
 import io.prometheus.client.Counter;
 import io.prometheus.client.Summary;
 import org.slf4j.Logger;

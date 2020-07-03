@@ -1,6 +1,6 @@
-package com.vmware.cn101.module3.app.service;
+package com.vmware.cn101.devops.app.service;
 
-import com.vmware.cn101.module3.app.model.AppInfo;
+import com.vmware.cn101.devops.app.model.AppInfo;
 
 public interface AppInfoService extends Service {
 

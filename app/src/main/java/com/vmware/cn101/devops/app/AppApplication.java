@@ -1,4 +1,4 @@
-package com.vmware.cn101.module3.app;
+package com.vmware.cn101.devops.app;
 
 import io.prometheus.client.exporter.HTTPServer;
 import org.slf4j.Logger;
