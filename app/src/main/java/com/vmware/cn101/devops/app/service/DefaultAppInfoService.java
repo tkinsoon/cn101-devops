@@ -26,11 +26,11 @@ public class DefaultAppInfoService implements AppInfoService {
             appInfo.setPort(Integer.parseInt(port));
         }
         // Local address
-        appInfo.setLocalHostAddress(InetAddress.getLocalHost().getHostAddress());
-        appInfo.setLocalHostName(InetAddress.getLocalHost().getHostName());
+        appInfo.setLocalHostAddress(InetAddress.getLoopbackAddress().getHostAddress());
+        appInfo.setLocalHostName(InetAddress.getLoopbackAddress().getHostName());
         // Remote address
-        appInfo.setRemoteHostAddress(InetAddress.getLoopbackAddress().getHostAddress());
-        appInfo.setRemoteHostName(InetAddress.getLoopbackAddress().getHostName());
+        appInfo.setRemoteHostAddress(InetAddress.getLocalHost().getHostAddress());
+        appInfo.setRemoteHostName(InetAddress.getLocalHost().getHostName());
 
         return appInfo;
     }
